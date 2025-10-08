@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpaceX - Starlink Mission</title>
+    <link href="/main.css" rel="stylesheet" />
+    <!-- <link href="/style.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <header class="absolute top-0 left-0 w-full z-20">
+      <div class="Logo-Handler flex p-2 min-lg:p-3 min-lg:ml-12 items-center w-full">
+        <div class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="147"
+            height="19"
+            viewBox="0 0 147 19"
+            fill="none"
+            class=""
+          >
+            <g>
+              <path
+                d="M33.4556 7.10059C35.9425 7.10059 37.5024 8.14389 37.5024 9.99707V11.2383C37.5024 13.2081 36.1594 14.0693 33.6704 14.0693H24.7524V18.4062H21.3345V7.10059H33.4556ZM146.805 0.544922V0.561523C141.398 1.00137 120.15 3.63015 105.414 18.4062H99.9458L100.557 17.7988C103.641 14.8268 117.282 2.23051 146.803 0.542969L146.805 0.544922ZM56.2397 18.4043H52.1655L50.3599 15.9287H39.8169L41.6274 14H48.9526L45.4292 9.17285L47.5093 6.62012L56.2397 18.4043ZM72.1841 7.09863C74.0086 7.09865 75.3021 7.72865 75.6343 9.07031H62.8081V16.2803H75.6343C75.2694 17.7734 74.4885 18.4042 72.2827 18.4043H62.5786C60.9037 18.4043 59.3268 17.7248 59.3267 15.9209V9.58203C59.3267 7.778 60.9037 7.09868 62.5786 7.09863H72.1841ZM90.7222 12.834H83.8247V16.2803H95.6489V18.4043H80.3481V10.8975H90.7222V12.834ZM120.998 18.4043H115.584L110.775 14.9082H110.777C111.663 14.2168 112.602 13.5232 113.51 12.9014L120.998 18.4043ZM12.9351 7.09863C14.8252 7.09865 15.9037 8.0272 16.2358 9.07031H3.59424V11.5049H13.3979V11.5029C15.3722 11.6154 16.5677 12.4597 16.5679 14.0488V15.8535C16.5677 17.6083 15.5242 18.4014 13.4331 18.4014H3.43018C1.52352 18.4014 0.428522 17.6897 0.112793 16.2783H13.4849V13.6934H3.54541C1.70432 13.7036 0.459473 12.8582 0.459473 11.3691V9.58203C0.459473 7.87612 1.66924 7.09863 3.77686 7.09863H12.9351ZM24.7524 12H33.0435C34.3863 12 34.5356 11.5512 34.5356 10.7412V10.2979C34.5356 9.50218 34.3371 9.07228 32.8774 9.07227H24.7729L24.7524 12ZM109.604 9.87891C108.627 10.4554 107.562 11.1202 106.646 11.7334L100.298 7.09863H105.705L109.604 9.87891ZM109.607 9.88086L109.604 9.87891L109.607 9.87793V9.88086ZM95.811 9.07031H80.3481V7.09863H95.811V9.07031Z"
+                fill="#F0F0FA"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="nav-bar ml-5 text-sm">
+          <nav>
+            <a
+              class="link menu-hover my-2 py-2 text-base text-white lg:mx-4"
+              onClick=""
+            >
+              VEHICLES</a
+            >
+            <a href="" class="link menu-hover my-2 py-2 text-base text-white lg:mx-4">LAUNCHES</a>
+            <a href="" class="link menu-hover my-2 py-2 text-base text-white lg:mx-4">HUMAN SPACELIGHT</a>
+            <a href="" class="link menu-hover my-2 py-2 text-base text-white lg:mx-4">RIDESHARE</a>
+            <a href="" class="link menu-hover my-2 py-2 text-base text-white lg:mx-4">STARLINK</a>
+            <a href="" class="link menu-hover my-2 py-2 text-base text-white lg:mx-4">STARSHIELD</a>
+            <a
+              href=""
+              class="link menu-hover my-2 py-2 text-base text-white lg:mx-4"
+              >COMPANY</a
+            >
+            <a href="" class="link menu-hover my-2 py-2 text-base text-white lg:mx-4">SHOP</a>
+          </nav>
+          <div
+            class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
+          >
+            <a class="my-2 block py-1 font-semibold text-white-500 md:mx-2">
+              STARSHIP
+            </a>
+
+            <a class="my-2 block py-1 font-semibold text-white-500 md:mx-2">
+              DRAGON
+            </a>
+
+            <a class="my-2 block py-1 font-semibold text-white-500 md:mx-2">
+              FALCON 9
+            </a>
+
+            <a class="my-2 block py-1 font-semibold text-white-500 md:mx-2">
+              FALCON HEAVY
+            </a>
+          </div>
+        </div>
+        <div class="web-update flex items-center justify-between border border-white text-white p-2 min-lg:ml-90">
+          <div>UPCOMING LAUNCHES</div>
+          <div>T-6D 11:40:10</div>
+        </div>
+      </div>
+    </header>
+    <!-- Section 1 -->
+    <section
+      class="relative h-[100vh] flex items-center justify-left bg-black text-white overflow-hidden"
+    >
+      <video
+        class="absolute inset-0 w-full h-full object-cover opacity-60"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+      >
+        <source
+          src="https://sxcontent9668.azureedge.us/cms-assets/assets/20250929_Flight11_Website_916_V4_b70ce676b7.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="relative z-10 text-left items-left pl-19 mt-72">
+        <p class="text-sm md:text-1xl mb-0 drop-shadow text-white text text-left">
+          T-6D 11:40:10
+        </p>
+
+        <h1
+          class="text-[50px] md:text-7xl font-bold mb-18 drop-shadow-lg text-[white] text-left"
+        >
+          STARSHIP'S ELEVENTH FLIGHT TEST
+        </h1>
+        <a
+          href="#"
+          class="inline-flex items-center bg-gray-900 px-8 py-3 border border-white font-semibold rounded hover:bg-white hover:text-black transition"
+          >WATCH <svg
+              class="w-4 h-4 ml-2"
+              width="13"
+              height="12"
+              viewBox="0 0 13 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.9893 5.58371L12.2471 5.89914L11.9893 6.21555L8.10059 10.9782L7.3252 10.3454L10.5479 6.39914L1.39941 6.39914L1.39941 5.39914L10.5479 5.39914L7.3252 1.45383L8.10059 0.821014L11.9893 5.58371Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+
+          </a
+        >
+      </div>
+    </section>
+
+    <!-- Section 2-->
+    <section class="relative h-screen bg-black text-white">
+      <video
+        class="absolute inset-50 w-full h-full object-cover"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+        poster="https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Mobile_9924bba7c2.jpg"
+      >
+        <source
+          type="video/mp4"
+          src="https://sxcontent9668.azureedge.us/cms-assets/assets/Mobile_v4_HB_e1d2eda88f.mp4"
+        />
+      </video>
+      <div class="relative z-10 h-full flex flex-col justify-end p-8 md:p-16">
+        <div class="max-w-md">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            MAKING LIFE MULTIPLANETARY
+          </h2>
+          <p class="mb-6">
+            SpaceX was founded under the belief that a future where humanity is
+            out exploring the stars is fundamentally more exciting than one
+            where we are not.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center px-8 py-3 bg-gray-900 border border-white font-semibold rounded hover:bg-white hover:text-black transition"
+          >
+            EXPLORE
+            <svg
+              class="w-4 h-4 ml-2"
+              width="13"
+              height="12"
+              viewBox="0 0 13 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.9893 5.58371L12.2471 5.89914L11.9893 6.21555L8.10059 10.9782L7.3252 10.3454L10.5479 6.39914L1.39941 6.39914L1.39941 5.39914L10.5479 5.39914L7.3252 1.45383L8.10059 0.821014L11.9893 5.58371Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="relative h-screen bg-black text-white">
+      <img
+        class="absolute inset-0 w-full h-full object-cover"
+        loading="lazy"
+        src="https://sxcontent9668.azureedge.us/cms-assets/assets/Revolutionizing_Space_Tech_Mobile_45093b17b7.jpg"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-l from-transparent to-black opacity-60"
+      ></div>
+      <div class="relative z-10 h-full flex flex-col min-lg:top-9 min-lg:left-290 min-md:left-90 p-8 md:p-16">
+        <div class="max-w-md">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            REVOLUTIONIZING SPACE TECHNOLOGY
+          </h2>
+          <p class="mb-6">
+            SpaceX’s Starship spacecraft and Super Heavy rocket is a fully
+            reusable transportation system designed to carry both crew and cargo
+            to Earth orbit, the Moon, Mars, and beyond.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center px-8 py-3 bg-gray-900 border border-white font-semibold rounded hover:bg-white hover:text-black transition"
+          >
+            LEARN MORE
+            <svg
+              class="w-4 h-4 ml-2"
+              width="13"
+              height="12"
+              viewBox="0 0 13 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.9893 5.58371L12.2471 5.89914L11.9893 6.21555L8.10059 10.9782L7.3252 10.3454L10.5479 6.39914L1.39941 6.39914L1.39941 5.39914L10.5479 5.39914L7.3252 1.45383L8.10059 0.821014L11.9893 5.58371Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="relative h-screen bg-black text-white">
+      <video
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+        poster="https://sxcontent9668.azureedge.us/cms-assets/assets/Leading_Launch_Service_Mobile_02_41fdea4331.jpg"
+      >
+        <source
+          type="video/mp4"
+          src="https://sxcontent9668.azureedge.us/cms-assets/assets/Leading_Launch_Service_Mobile_02email_c06f4154a8.mp4"
+        />
+      </video>
+      <div
+        class="absolute inset-0 bg-gradient-to-l from-transparent to-black opacity-60"
+      ></div>
+      <div class="relative z-10 h-full flex flex-col p-8 md:p-16">
+        <div class="max-w-md">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            WORLD'S LEADING LAUNCH SERVICE PROVIDER
+          </h2>
+          <p class="mb-6">
+            SpaceX leads the world in launches with its reliable, reusable
+            rockets and is developing the fully and rapidly reusable rockets
+            necessary to transform humanity’s ability to access space into
+            something as routine as air travel.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center px-8 py-3 bg-gray-900 border border-white font-semibold rounded hover:bg-white hover:text-black transition"
+          >
+            RESERVE YOUR RIDE
+            <svg
+              class="w-4 h-4 ml-2"
+              width="13"
+              height="12"
+              viewBox="0 0 13 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.9893 5.58371L12.2471 5.89914L11.9893 6.21555L8.10059 10.9782L7.3252 10.3454L10.5479 6.39914L1.39941 6.39914L1.39941 5.39914L10.5479 5.39914L7.3252 1.45383L8.10059 0.821014L11.9893 5.58371Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="relative h-screen bg-black text-white">
+      <img
+        class="absolute inset-0 w-full h-full object-cover"
+        loading="lazy"
+        src="https://sxcontent9668.azureedge.us/cms-assets/assets/Advancing_Human_Spaceflight_Mobile_af242fde31.jpg"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-l from-transparent to-black opacity-60"
+      ></div>
+      <div class="relative z-10 h-full flex flex-col min-lg:left-300 min-md:left-110 p-8 md:p-16">
+        <div class="max-w-md">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            ADVANCING HUMAN SPACEFLIGHT
+          </h2>
+          <p class="mb-6">
+            Since returning human spaceflight capabilities to the United States
+            in 2020, SpaceX is helping build a new era where not just hundreds
+            of people, but thousands and ultimately millions will be able to
+            explore space.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center px-8 py-3 bg-gray-900 border border-white font-semibold rounded hover:bg-white hover:text-black transition"
+          >
+            JOIN A MISSION
+            <svg
+              class="w-4 h-4 ml-2"
+              width="13"
+              height="12"
+              viewBox="0 0 13 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.9893 5.58371L12.2471 5.89914L11.9893 6.21555L8.10059 10.9782L7.3252 10.3454L10.5479 6.39914L1.39941 6.39914L1.39941 5.39914L10.5479 5.39914L7.3252 1.45383L8.10059 0.821014L11.9893 5.58371Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="relative h-screen bg-black text-white">
+      <video
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+        poster="https://sxcontent9668.azureedge.us/cms-assets/assets/Delivering_Highspeed_Mobile_86f0698604.jpg"
+      >
+        <source
+          type="video/mp4"
+          src="https://sxcontent9668.azureedge.us/cms-assets/assets/Starlink_12_10_20250428_Deploy_website_MOBILE_02_6c0f367324.mp4"
+        />
+      </video>
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"
+      ></div>
+      <div class="relative z-10 h-full flex flex-col justify-center p-8 md:p-16">
+        <div class="max-w-md">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            DELIVERING HIGH-SPEED INTERNET FROM SPACE
+          </h2>
+          <p class="mb-6">
+            Starlink is the world’s most advanced satellite constellation in
+            low-Earth orbit, delivering reliable broadband internet capable of
+            supporting streaming, online gaming, video calls, and more.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center px-8 py-3 bg-gray-900 border border-white font-semibold rounded hover:bg-white hover:text-black transition"
+          >
+            ORDER NOW
+            <svg
+              class="w-4 h-4 ml-2"
+              width="13"
+              height="12"
+              viewBox="0 0 13 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.9893 5.58371L12.2471 5.89914L11.9893 6.21555L8.10059 10.9782L7.3252 10.3454L10.5479 6.39914L1.39941 6.39914L1.39941 5.39914L10.5479 5.39914L7.3252 1.45383L8.10059 0.821014L11.9893 5.58371Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-8">
+      <div
+        class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center"
+      >
+        <div class="mb-4 md:mb-0 roun">X</div>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-white">CAREERS</a>
+          <a href="#" class="hover:text-white">UPDATES</a>
+          <a href="#" class="hover:text-white">PRIVACY POLICY</a>
+          <a href="#" class="hover:text-white">SUPPLIER</a>
+        </div>
+        <div class="mb-4 md:mb-0">@2025 SpaceX</div>
+      </div>
+    </footer>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
